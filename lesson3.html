@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       
+       
+       //Задание 1
+       var num=2;
+       while(num<=100){
+          if(numSimple(num)==true) {
+              document.write(num + " ");
+       }
+           num++;
+       }
+       
+       function numSimple(num){
+           var i=2;
+           while(i<num){
+               if(num % i==0){
+                   return false;
+               }
+               i++;
+           }
+           return true;
+       }
+       
+       //Задание 2
+       
+        var a=0;
+      
+       do{
+           if(a==0){
+               document.write(a + " - это ноль <br>");
+           }
+          else if((a%2)==0)
+              document.write(a + " - это чётное число <br>");
+              else
+               document.write(a + " - это нечётное число <br>");
+        a++;
+       } while(a<=10);
+       
+       //3
+       
+       for(i=0;i<=9;document.write(i++ + " <br> ")){
+        
+    }
+       //Задание 4
+       
+       var b="x";
+       var a;
+       for(a=1;a<=20;a++){
+           console.log(b);
+           b+="x";
+        }
+     </script>
+</body>
+</html>
